@@ -11,6 +11,8 @@ import {
   LogOut,
   Link,
   Menu,
+  Award,
+  User,
 } from "lucide-react";
 import { useAuth } from "../contexts/AuthContext";
 import { useNotificationContext } from "../contexts/NotificationContext";
@@ -40,6 +42,8 @@ const StudentSidebar: React.FC<StudentSidebarProps> = ({ isOpen, onClose }) => {
     { id: "join-poll", label: "Join Poll", icon: Link },
     { id: "leaderboard", label: "Leaderboard", icon: Trophy },
     { id: "history", label: "Poll History", icon: History },
+    { id: "profile", label: "Profile", icon: User },
+    { id: "achievements", label: "Achievements", icon: Award },
     { id: "notifications", label: "Notifications", icon: Bell },
     { id: "settings", label: "Settings", icon: Settings },
   ];
